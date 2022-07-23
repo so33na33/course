@@ -22,9 +22,9 @@ Addcourse(){
   this.api.addcourse(this.course)
   .subscribe(
     (data)=>{ 
-  
+    }
+    )
   alert("success");
-}
-  )
+
 }
 }

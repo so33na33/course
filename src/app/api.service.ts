@@ -8,10 +8,10 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
   viewcourse=()=>{
-    return this.http.get("https://mylinkurcodesapp.herokuapp.com/getcourses")
+    return this.http.get("http://localhost:3001/viewcourse")
     
   }
   addcourse(course:any){
-    return this.http.post<any>("https://mylinkurcodesapp.herokuapp.com/addcourse",course)
+    return this.http.post<any>("http://localhost:3001/addcourse",course)
   }
 }
